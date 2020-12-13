@@ -1,0 +1,9 @@
+# Добавление направленй на дерево 
+
+img = Image.open('tree1.PNG')
+watermark = Image.open('light1.png')
+
+width, height = img.size
+
+img.paste(watermark, (int(width / 2) - 80, height - 30),  watermark)
+img.save("img_with_watermark.png")
